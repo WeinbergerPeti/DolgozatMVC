@@ -1,0 +1,22 @@
+{
+    "jatek":[
+    {
+        "id":1,
+        "cim":"God of War - Ragnarök",
+        "platform":"Playstation",
+        "db":22
+    },
+    {
+        "id":2,
+        "cim":"GTA V",
+        "platform":"Xbox",
+        "db":10
+    },
+    {
+        "id":3,
+        "cim":"Super Mario",
+        "platform":"Nintendo",
+        "db":5
+    }
+    ]
+}
