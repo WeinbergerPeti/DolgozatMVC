@@ -18,7 +18,6 @@ class JatekAdminView
 
         this.modositElem.on("click", ()=>
         {
-            console.log("Módosít a view-ban");
             this.kattintasTrigger("modosit");
         });
 
@@ -26,7 +25,6 @@ class JatekAdminView
 
     kattintasTrigger(esemenyNeve)
     {
-        console.log("triggerben",esemenyNeve);
         const esemeny = new CustomEvent(esemenyNeve,{detail:this.#elem.id});
         window.dispatchEvent(esemeny);
     }

@@ -1,5 +1,4 @@
 import JatekModel from "../model/JatekModel.js";
-import JatekAdminView from "../view/JatekAdminView.js";
 import JatekokAdminView from "../view/JatekokAdminView.js";
 
 class JatekController
@@ -11,17 +10,8 @@ class JatekController
 
         $(window).on("modosit", (event)=>
         {
-            console.log("controllerben módosít", event.detail);
-            jatekModel.adatModosit(event.detail);
+            jatekModel.adatModosit(event.detail, this.jatekAdatok);
         });
-
-
-        // $(window).on("csokkentes", (event)=>
-        // {
-        //     console.log("platform módosít", event.detail);
-        //     kosarModel.kosarba(event.detail);
-        // });
-
     }
 
     jatekAdatok(tomb)

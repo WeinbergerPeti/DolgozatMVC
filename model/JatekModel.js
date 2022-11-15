@@ -3,17 +3,13 @@ class JatekModel
     #jatekokTomb=[];
     constructor()
     {
-
+        
     }
 
-    adatModosit(adat)
+    adatModosit(adat, myCallBack)
     {
-        console.log("Modelben módosít",adat);
-        console.log(this.#jatekokTomb[adat-1]);
-        console.log(this.#jatekokTomb[adat-1].db--);
-        // let csokkentes = this.#jatekokTomb[adat-1].db--;
-
-        // console.log(csokkentes-1);
+        this.#jatekokTomb[adat-1].db--;
+       myCallBack(this.#jatekokTomb);
     }
 
     adatBe(vegpont, myCallBack) 
@@ -31,7 +27,6 @@ class JatekModel
             {
                 this.#jatekokTomb = data.jatek;
                 myCallBack(this.#jatekokTomb);
-                this.adatModosit(jatek);
             })
             .catch((error) => 
             {

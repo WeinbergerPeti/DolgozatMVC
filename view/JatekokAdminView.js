@@ -7,11 +7,11 @@ class JatekokAdminView
         szuloElem.html(`
         <div id="alapSor">
             <div class=elemekSorai>
-            <p>ID</p>
-            <p>Cím</p>
-            <p>Platform</p>
-            <p>Darab</p>
-            <p>Szerkesztés</p>
+            <h3>ID</h3>
+            <h3>Cím</h3>
+            <h3>Platform</h3>
+            <h3>Darab</h3>
+            <h3>Szerkesztés</h3>
             </div>
         </div>
         `)
